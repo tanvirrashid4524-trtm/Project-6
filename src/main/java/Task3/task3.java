@@ -1,0 +1,16 @@
+package Task3;
+
+public class task3 {
+
+    public static int sumOfDigits(int x) {
+        if (x == 0) {
+            return 0;
+        }
+        return (x % 10) + sumOfDigits(x / 10);
+    }
+
+    public static void main(String[] args) {
+        System.out.println(sumOfDigits(1342)); // 10
+        System.out.println(sumOfDigits(123));  // 6
+    }
+}
